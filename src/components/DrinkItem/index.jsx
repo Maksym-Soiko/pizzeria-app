@@ -1,14 +1,17 @@
 import { useCart } from "../../context/CartContext/index.jsx";
 
 export default function DrinkItem({ drink }) {
-  const { addToCart } = useCart();
+  const { addItem } = useCart();
 
   const handleAdd = () => {
-    addToCart({
+    addItem({
+      id: drink.id,
       type: "drink",
       name: drink.name,
-      volume: drink.volume,
       price: drink.price,
+      options: {
+        volume: drink.volume,
+      },
     });
   };
 

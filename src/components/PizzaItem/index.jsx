@@ -5,7 +5,7 @@ export default function PizzaItem({ pizza }) {
   const [size, setSize] = useState("Мала");
   const [crust, setCrust] = useState(pizza.crustTypes[0]);
   const [selectedToppings, setSelectedToppings] = useState([]);
-  const { addToCart } = useCart();
+  const { addItem } = useCart();
 
   const toggleTopping = (topping) => {
     setSelectedToppings((prev) =>
@@ -26,13 +26,16 @@ export default function PizzaItem({ pizza }) {
   };
 
   const handleAdd = () => {
-    addToCart({
+    addItem({
+      id: pizza.id,
       type: "pizza",
       name: pizza.name,
-      size,
-      crust,
-      toppings: selectedToppings,
       price: calcPrice(),
+      options: {
+        size,
+        crust,
+        toppings: selectedToppings,
+      },
     });
   };
 
@@ -42,7 +45,8 @@ export default function PizzaItem({ pizza }) {
         <img
           src={pizza.image}
           alt={pizza.name}
-          className="max-h-40 w-auto object-contain rounded-t-2xl group-hover:scale-105 transition-transform duration-300"/>
+          className="max-h-40 w-auto object-contain rounded-t-2xl group-hover:scale-105 transition-transform duration-300"
+        />
         <div className="absolute -top-4 -right-4 bg-yellow-100 rounded-full w-16 h-16 opacity-30 group-hover:scale-110 transition-transform duration-300"></div>
       </div>
       <div className="flex-1 flex flex-col px-4 pb-4">
