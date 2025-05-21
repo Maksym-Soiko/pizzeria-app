@@ -47,4 +47,28 @@ export const drinks = [
     image:
       "https://image.maudau.com.ua/webp/size/lg/products/73/3f/fb/733ffb4a-291c-462e-a1e8-96273824a16f",
   },
+  {
+    id: 7,
+    name: "Моршинська негазована",
+    volume: "0.5 л",
+    price: 17,
+    image:
+      "https://image.maudau.com.ua/webp/size/lg/products/78/ad/e0/78ade016-ea8d-46df-926b-689ccefae1b0",
+  },
+  {
+    id: 8,
+    name: "Моршинська слабогазована",
+    volume: "0.5 л",
+    price: 17,
+    image:
+      "https://image.maudau.com.ua/webp/size/lg/products/cb/26/b4/cb26b407-1546-423d-8c15-829a6f001f2f",
+  },
+  {
+    id: 9,
+    name: "Вода мінеральна Borjomi",
+    volume: "1.25 л",
+    price: 79,
+    image:
+      "https://image.maudau.com.ua/webp/size/lg/products/61/70/25/617025cb035d64112346f0fc496ca53b.jpg",
+  },
 ];

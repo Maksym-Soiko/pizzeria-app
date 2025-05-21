@@ -34,7 +34,8 @@ export const pizzas = [
   {
     id: 3,
     name: "Гавайська",
-    description: "Соус вершковий, сир моцарела, курка, ананас, кукурудза, маслини",
+    description:
+      "Соус вершковий, сир моцарела, курка, ананас, кукурудза, маслини",
     basePrices: { Мала: 259, Середня: 399, Велика: 512 },
     crustTypes: ["Традиційне", "Тонке"],
     toppings: [
@@ -49,7 +50,8 @@ export const pizzas = [
   {
     id: 4,
     name: "Мексиканська",
-    description: "Соус томатний, сир моцарела, бекон, папероні, гриби, парець халапеньо",
+    description:
+      "Соус томатний, сир моцарела, бекон, папероні, гриби, парець халапеньо",
     basePrices: { Мала: 259, Середня: 363, Велика: 447 },
     crustTypes: ["Традиційне", "Тонке"],
     toppings: [
@@ -80,7 +82,8 @@ export const pizzas = [
   {
     id: 6,
     name: "4 Сири",
-    description: "Cоус вершковий, сир моцарела, сир дор блю, сир королівський, сир пармезан",
+    description:
+      "Cоус вершковий, сир моцарела, сир дор блю, сир королівський, сир пармезан",
     basePrices: { Мала: 276, Середня: 409, Велика: 487 },
     crustTypes: ["Традиційне", "Тонке"],
     toppings: [
@@ -91,5 +94,51 @@ export const pizzas = [
     ],
     image:
       "https://prontopizza.ua/khmelnytskyi/wp-content/uploads/sites/11/2021/07/4syry-kopiya-500x500.webp",
+  },
+  {
+    id: 7,
+    name: "Карибська",
+    description: "Соус вершковий, сир моцарела, креветка, цибуля синя, базилік",
+    basePrices: { Мала: 327, Середня: 409, Велика: 490 },
+    crustTypes: ["Традиційне", "Тонке"],
+    toppings: [
+      { name: "Цибуля", price: 15 },
+      { name: "Сир Моцарелла", price: 38 },
+      { name: "Базилік", price: 12 },
+    ],
+    image:
+      "https://prontopizza.ua/khmelnytskyi/wp-content/uploads/sites/11/2024/11/karybska-kopiya-500x500.webp",
+  },
+  {
+    id: 8,
+    name: "Морено",
+    description:
+      "Соус вершковий том ям, сир моцарела, мідії, креветки, помідори чері, гриби, кунжут",
+    basePrices: { Мала: 307, Середня: 407, Велика: 500 },
+    crustTypes: ["Традиційне", "Тонке"],
+    toppings: [
+      { name: "Помідори Чері", price: 26 },
+      { name: "Сир Моцарелла", price: 38 },
+      { name: "Гриби", price: 22 },
+    ],
+    image:
+      "https://prontopizza.ua/khmelnytskyi/wp-content/uploads/sites/11/2025/02/morena-kopiya-500x500.webp",
+  },
+  {
+    id: 9,
+    name: "Цезар",
+    description:
+      "Соус цезар, сир моцарела, сир пармезан, курка, бекон, помідори чері, айсберг",
+    basePrices: { Мала: 293, Середня: 427, Велика: 519 },
+    crustTypes: ["Традиційне", "Тонке"],
+    toppings: [
+      { name: "Сир Пармезан", price: 78 },
+      { name: "Сир Моцарелла", price: 38 },
+      { name: "Курка", price: 35 },
+      { name: "Бекон", price: 36 },
+      { name: "Помідори Чері", price: 26 },
+    ],
+    image:
+      "https://prontopizza.ua/khmelnytskyi/wp-content/uploads/sites/11/2025/03/czezar-kopiya-500x500.webp",
   },
 ];

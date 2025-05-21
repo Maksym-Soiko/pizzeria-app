@@ -51,24 +51,26 @@ export default function CartItem({ item }) {
         <p className="text-sm font-medium">Ціна за одиницю: {item.price} грн</p>
       </div>
 
-      <div className="flex items-center gap-2">
+      <div className="flex items-center gap-1 sm:gap-2 min-w-[48px] justify-end">
         <input
           type="number"
           min="1"
-          className="w-16 h-10 text-center text-lg font-semibold border-2 border-yellow-300 rounded-lg shadow-sm focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 transition-all duration-150 outline-none bg-white hover:border-yellow-400"
+          className="w-10 h-8 sm:w-16 sm:h-10 text-center text-base sm:text-lg font-semibold border-2 border-yellow-300 rounded-lg shadow-sm focus:border-yellow-500 focus:ring-2 focus:ring-yellow-200 transition-all duration-150 outline-none bg-white hover:border-yellow-400"
           value={item.quantity}
           onChange={(e) => {
             const val = parseInt(e.target.value, 10);
             if (!isNaN(val)) updateQuantity(item.id, item.options, val);
           }}/>
         <button
-          className="text-red-600 font-bold p-1 rounded hover:bg-red-50 transition"
+          className="text-red-600 font-bold p-0.5 sm:p-1 rounded hover:bg-gray-100 transition flex-shrink-0 cursor-pointer"
           onClick={() => removeItem(item.id, item.options)}
-          title="Видалити">
+          title="Видалити"
+          style={{ minWidth: 32, minHeight: 32 }}>
           <img
             src="https://cdn-icons-png.flaticon.com/128/3917/3917211.png"
             alt="Видалити"
-            className="w-6 h-6"/>
+            className="w-5 h-5 sm:w-6 sm:h-6"
+            style={{ minWidth: 20, minHeight: 20 }}/>
         </button>
       </div>
     </div>
